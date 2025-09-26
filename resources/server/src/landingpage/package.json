@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "node init && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -44,7 +44,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {"vue/no-mutating-props": "off"}
+    "rules": {
+      "vue/no-mutating-props": "off"
+    }
   },
   "browserslist": [
     "> 1%",
